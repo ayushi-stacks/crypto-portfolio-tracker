@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto Portfolio Tracker</title>
+    <link rel="icon" href="crypto.png" type="image type">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1><span id="heading"></span></h1>
+
+    <div class="input-section">
+        <label for="btc">Enter your Bitcoin holdings:</label>
+        <input type="number" id="btc" placeholder="0.00">
+    </div>
+
+    <div class="input-section">
+        <label for="eth">Enter your Ethereum holdings:</label>
+        <input type="number" id="eth" placeholder="0.00">
+    </div>
+
+    <div class="input-section">
+        <label for="ltc">Enter your Litecoin holdings:</label>
+        <input type="number" id="ltc" placeholder="0.00">
+    </div>
+
+    <div class="input-section">
+        <label for="xrp">Enter your Ripple holdings:</label>
+        <input type="number" id="xrp" placeholder="0.00">
+    </div>
+
+    <button id="calculate">Calculate Portfolio</button>
+
+    <div id="portfolio-value"></div>
+
+    <canvas id="portfolioChart" height="400px" width="400px"></canvas>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+    
+</body>
+</html>
